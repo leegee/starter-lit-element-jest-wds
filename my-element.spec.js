@@ -1,11 +1,14 @@
 import 'expect-puppeteer';
 
-describe('Google', () => {
+const URL = 'http://localhost:8081/dev/';
+
+
+describe('WDS', () => {
   beforeAll(async () => {
-    await page.goto('https://google.com')
+    await page.goto(URL);
   })
 
-  it('should display "google" text on page', async () => {
-    await expect(page).toMatch('google')
+  it('should display text on page', async () => {
+    await expect(page).toMatch('This is some child content')
   })
 })

@@ -9,7 +9,7 @@
     "lint": "lit-analyzer my-element.js && eslint '**/*.js'",
     "format": "prettier my-element.js test/* --write",
     "analyze": "wca analyze \"**/*.js\" --outFile custom-elements.json",
-    "serve": "web-dev-server --app-index dev/index.html --node-resolve --watch --open",
+    "serve": "web-dev-server --app-index dev/index.html --node-resolve --watch --open --port 8081",
     "test": "jest",
     "checksize": "rollup -c ; cat my-element.bundled.js | gzip -9 | wc -c ; rm my-element.bundled.js"
   },
