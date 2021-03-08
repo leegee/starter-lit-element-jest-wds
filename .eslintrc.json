@@ -4,10 +4,13 @@
   ],
   "env": {
     "browser": true,
-    "mocha": true
+    "jest": true
   },
   "globals": {
-    "chai": "readonly"
+    "page": true,
+    "browser": true,
+    "context": true,
+    "jestPuppeteer": true,
   },
   "parser": "babel-eslint",
   "parserOptions": {
